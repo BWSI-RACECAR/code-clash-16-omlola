@@ -54,7 +54,7 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         lyst = []
 
-        if list(graph.keys()).contains("Start"):
+        if "Start" in list(graph.keys()):
             self.__graph = graph
             return self.spath_algo(graph.get("Start"))
         else:
