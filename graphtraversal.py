@@ -60,9 +60,9 @@ class Solution:
         else:
             for key in list(graph.keys()):
                 if key == "Finish":
-                    lyst.add(graph.get(key))
+                    lyst.append(graph.get(key))
                 else:
-                    lyst.add(self.spath_algo(self.__graph.get(key)) + graph.get(key))
+                    lyst.append(self.spath_algo(self.__graph.get(key)) + graph.get(key))
             return(min(lyst))
         
 
